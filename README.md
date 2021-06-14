@@ -35,7 +35,7 @@ This can be useful if you wish to test some points on the map
 # Video output
 
 <p align="center">
-<img src="data/bfs-final-video-r3wcks1n-ymwm_3psW38gP_Gofs.avi"/>
+<img src="data/bfs-final-video-r3wcks1n-ymwm_3psW38gP_Gofs.gif"/>
 </p>
 
 <p align="center">
