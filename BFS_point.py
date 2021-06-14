@@ -121,3 +121,26 @@ def find_moves(i,j, obj):
     #print(final_moves)
     return final_moves
 
+
+def printDebugLines(mainList, backTrack):
+    print(mainList)
+    print('---------------------------------------------------------------------\n\n')
+    for i in range(len(backTrack)):
+        print('--------------------------------------------------------------------')
+        print(backTrack[i].state)
+        print(backTrack[i].parent_index)
+        print(backTrack[i].parent_state)
+        print('---------------------------------------------------------------------\n')
+
+# function to back track the nodes
+def backTrace(backTrack, goal):
+    track, parent_state, last_parent_index  = [], [], -1
+    for i in reversed(range(len(backTrack))):
+        if last_parent_index == backTrack[i].parent_index:
+            continue
+        if backTrack[i].state == goal or backTrack[i].state == parent_state:
+            last_parent_index = backTrack[i].parent_index
+            parent_state = backTrack[i].parent_state
+            track.insert(0,backTrack[i])
+    track.pop(0)
+    return track
