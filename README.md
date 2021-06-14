@@ -2,7 +2,7 @@
 
 # Map
 <p align="center">
-<img src="data/map5.png"/>
+<img src="data/map5.jpg"/>
 </p>
 
 <p align="center">
@@ -35,7 +35,7 @@ This can be useful if you wish to test some points on the map
 # Video output
 
 <p align="center">
-<img src="data/bfs-final-video-r3wcks1n-ymwm_3psW38gP_Gofs.gif"/>
+<img src="data/bfs-final-video-r3wcks1n-ymwm_3psW38gP_Gofs.avi"/>
 </p>
 
 <p align="center">
@@ -43,6 +43,6 @@ This can be useful if you wish to test some points on the map
 </p>
 
 <p align="center">
-<img src="data/final_.jpg"/>
+<img src="data/final__.jpg"/>
 </p>
 
