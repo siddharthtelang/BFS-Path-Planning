@@ -108,3 +108,16 @@ def isInObstacleSpace(i,j):
         return 1
 
     return 0
+
+# function to find the moves from given coordinates
+def find_moves(i,j, obj):
+    moves = ['N','NE', 'E', 'SE', 'S', 'SW','W', 'NW']
+    final_moves = ['N','NE', 'E', 'SE', 'S', 'SW','W', 'NW']
+    move_i = [i, i+1, i+1, i+1, i, i-1, i-1, i-1]
+    move_j = [j+1, j+1, j, j-1, j-1, j-1, j, j+1]
+    for move in range(len(moves)):
+        if (isInObstacleSpace(move_i[move], move_j[move]) or obj.parent_state == [move_i[move], move_j[move]]):
+            final_moves.remove(moves[move])
+    #print(final_moves)
+    return final_moves
+
