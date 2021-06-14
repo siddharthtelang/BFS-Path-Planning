@@ -41,3 +41,16 @@ class Queue:
     # print the queue
     def __print__(self):
         print(self.queue)
+
+# define a class Node for storing all nodes generated in map with parent node info
+class Node:
+
+    # init function to store info about:
+    # child: own state and move
+    # parent: index, state and move
+    def __init__(self, state, parent_index, move):
+        self.state = state # child list
+        self.move = move
+        self.parent_index = parent_index # parent index
+        self.parent_state = [] # parent list/state form
+        self.parent_move = ''
